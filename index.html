@@ -33,6 +33,7 @@
       }
       #text-bar {
         display: flex;
+        padding: 0 12px;
         height: 32px;
       }
       #label {
@@ -43,6 +44,10 @@
         text-align: left;
         text-overflow: ellipsis;
       }
+      #remaining {
+        font-size: 16px;
+        line-height: 16px;
+      }
       #progress-bar {
         height: 36px;
         position: relative;
@@ -50,7 +55,7 @@
       #meter {
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 12px;
         background-color: #210664;
         background-color: -moz-linear-gradient(top, #260e63 0%, #1b0060 100%); /* FF3.6-15 */
         background-color: -webkit-linear-gradient(top, #260e63 0%,#1b0060 100%); /* Chrome10-25,Safari5.1-6 */
@@ -131,7 +136,7 @@
       </div>
       <div id="options-container">
         <div id="buttons">
-          <div id="button-startstop" class="button">Start</div>
+          <div id="button-toggle" class="button">Start</div>
           <div id="button-next" class="button">Next</div>
           <div id="button-update" class="button">Update</div>
         </div>
