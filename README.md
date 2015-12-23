@@ -8,9 +8,14 @@ Takes a list of actions with optional durations and displays the progress toward
 Never Ending Action
 Action with Duration (PT5M)
 Action with Duration (P1M)
+Random Choice 1 | Random Choice 2 | Random Choice 3 (PT10S)
 ```
 
 An action without a duration will last until manually skipped.  Actions with a duration will automatically move to the next action in the list when the duration has elapsed. The duration can be specified in any format accepted by a [Moment.js](http://momentjs.com) [Duration](http://momentjs.com/docs/#/durations/creating/).
+
+Multiple labels separated by pipes (`|`) will randomly choose one of the labels when loaded or on an update.
+
+The progress bar during a duration action will reflect the progress towards the total of the durations in the list.  The labels will display for their individual durations but the bar and time remaining will be against the total.
 
 Should the list of actions run out or is empty, it will default to "Escaping the Moon Prison" with no duration.
 
